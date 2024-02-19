@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     name: Setup Gcloud Account
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment: hw-prod
     env:
       IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/site:latest
