@@ -13,7 +13,7 @@ jobs:
       IMAGE_NAME: gcp.io/${{secrets.GCP_PROJECT_ID}}/site:latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - uses: google-githug-actions-setup-gcloud@v0.2.0
         with:
